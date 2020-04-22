@@ -5,75 +5,18 @@ import javax.swing.JOptionPane;
 public class PRIME {
 public static void main(String[] args) {
 	String numba = JOptionPane.showInputDialog("Pick a number?");
-	
-	for (int i = 0; i < 10; i++) {
-		if(numba % 2) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
+	int net = Integer.parseInt(numba);
+	boolean  number = false;
+	for (int i = 2; i < net; i++) {
+		if(net % i == 0) {
+			JOptionPane.showMessageDialog(null, "Your number is not prime.");
+			number = true;
 		}
-		if(numba % 3) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 4) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 5) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 6) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 7) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 8) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
-		if(numba % 9) {
-			//break();
-			JOptionPane.showMessageDialog(null, "Your numba is not prime.");
-		}
+		
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	if(number == false) {
+		JOptionPane.showMessageDialog(null, "Your number is prime.");
 	}
 }
+	}
+
